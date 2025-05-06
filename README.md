@@ -28,8 +28,11 @@ An IoT-powered smart access system using **ESP8266 + MFRC522 RFID module** that 
 
 ## 📷 Preview
 
-> *![image](https://github.com/user-attachments/assets/9f93e8af-1651-478c-8af2-b5dd0fbbd09b)
-![image](https://github.com/user-attachments/assets/5da715ab-d19f-433b-8e30-ac5666a0f276)
+> *
+>  ![IMG20250506115950](https://github.com/user-attachments/assets/48651ca7-cd92-4030-ba36-8eac3a19c8ed)
+
+> ![image](https://github.com/user-attachments/assets/9f93e8af-1651-478c-8af2-b5dd0fbbd09b)
+
 
 *
 
