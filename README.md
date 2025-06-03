@@ -20,6 +20,7 @@ An IoT-powered smart access system using **ESP8266 + MFRC522 RFID module** that 
 |---------------|---------------------------------------|
 | Microcontroller | ESP8266 (NodeMCU)                 |
 | Sensors       | MFRC522 RFID / NFC Reader            |
+| Actuator      |Servo Motor (SG90 or compatible)      |
 | Connectivity  | WiFi (ESP8266), HTTPS                |
 | Cloud         | ThingSpeak (IoT data), Telegram Bot API |
 | Language      | C++ (Arduino IDE)                    |
@@ -43,8 +44,10 @@ An IoT-powered smart access system using **ESP8266 + MFRC522 RFID module** that 
 1. **Hardware Required**
    - ESP8266 NodeMCU board
    - MFRC522 RFID module
+   - Servo motor (e.g., SG90)
    - Breadboard + jumper wires
    - Optional: Phone with NFC
+     
 
 2. **Clone this repo**
    ```bash
@@ -54,14 +57,22 @@ An IoT-powered smart access system using **ESP8266 + MFRC522 RFID module** that 
 
   UID is compared to allowed list
   
-  If unauthorized:
-  
-  Telegram alert is sent 🚨
-  
-  UID + timestamp are logged to ThingSpeak 📊
+   ✅ If authorized:
+   
+   Servo motor unlocks the door
+   
+   Access is logged to ThingSpeak
+   
+   ❌ If unauthorized:
+   
+   Telegram alert is sent 🚨
+
+   UID + timestamp are logged to ThingSpeak 📊
+
+
 
 📡 Live Dashboard (ThingSpeak)
-[Add link to your public ThingSpeak channel]
+[(https://thingspeak.mathworks.com/channels/2929829)]
 
 
 
