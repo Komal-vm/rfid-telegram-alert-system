@@ -13,17 +13,17 @@ Servo gateServo;
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 // WiFi credentials
-const char* ssid = "oppoReno";
-const char* password = "12345678";
+const char* ssid = "WIFI_NAME";
+const char* password = "WIFI_PASSWORD";
 
 // ThingSpeak settings
 const char* thingSpeakServer = "api.thingspeak.com";
-const unsigned long channelID = 2929829;
-const char* writeAPIKey = "Y3TH0DBCYMTL7XT1";
+const unsigned long channelID = CHANNELID;
+const char* writeAPIKey = "APIkey";
 
 // Telegram settings
-const char* telegramBotToken = "7810056173:AAFKSBV69XBbDLgaJAXC6ddXEt-dEzrJZ2Y"; // 🔁 Replace this
-const char* chatID = "1261477420";             // 🔁 Replace this
+const char* telegramBotToken = "BOTTOKEN"; // 🔁 Replace this
+const char* chatID = "CHATID";             // 🔁 Replace this
 const char* telegramHost = "api.telegram.org";
 
 WiFiClient client;
